@@ -1,0 +1,92 @@
+@CHARSET "UTF-8";
+
+.showMsg {
+	position:fixed;
+	right: 60px;
+	bottom: 0px;
+}
+.xlx {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.login_img{
+	width: 34px;height:34px;
+}
+.myfont {
+	font-family: 'Arial','Microsoft YaHei';
+}
+.myfontColor {
+	color: #666666;
+}
+.myTextOverflow {
+    white-space:nowrap; 
+    text-overflow:ellipsis;
+    overflow:hidden;
+    text-align: center;
+}
+.menu-right{
+	position:fixed;
+	right: -8px;
+	bottom: 3px;
+}
+.menu-right button{
+	border: 0px;
+	color: #FFFFFF;
+	filter: alpha(opacity=40);  
+    background-color: rgb(0, 0, 0);  
+    background-color: rgba(0, 0, 0, 0.4);  
+}
+
+.urlGroupItem .panel {
+	margin-bottom: 22px;
+}
+.groupCol {
+	padding-left: 11px;
+	padding-right: 11px;
+}
+.my-top-btn{
+	font-family: 'Microsoft YaHei';
+	font-size: 24px;
+	width: 52px;
+	height: 52px;
+	border-radius: 15px;
+	text-align: center;
+	vertical-align: middle;
+	user-select: none;
+	text-transform:uppercase;
+	display: inline-block;
+	padding:0px;
+	margin:0px;
+}
+.group-index-right {
+	position: fixed;
+    right: -17px;
+    bottom: 110px;
+    width: 55px;
+    height: 80%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: 0px solid #cccccc;
+    border-radius: 5px;
+}
+.group-index-right a{
+	padding-left: 0px;
+    font-family: 'Microsoft YaHei';
+    height: 45px;
+    line-height: 32px;
+    font-size: 16px;
+}
+
+.my-glyphicon-btn{
+	padding-left: 10px;
+	cursor:pointer;
+}
+
+.my-navbar input,.my-navbar select,.my-navbar button{
+	color:#777!important;
+	border-color: #ddd;
+}
+.my-navbar button{
+	width: 65px;
+}

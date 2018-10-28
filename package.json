@@ -10,8 +10,13 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "eventie": "^1.0.6",
+    "imagesloaded": "^4.1.4",
+    "isotope": "^1.0.0-alpha.3",
+    "jquery": "^3.3.1",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "wolfy87-eventemitter": "^5.2.5"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

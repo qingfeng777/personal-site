@@ -1,0 +1,52 @@
+@CHARSET "UTF-8";
+
+.addUrlForm_pin{
+	width: 100%;
+}
+.url-title {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.url-title-width{
+	width:220px;
+}
+@media (min-width: 400px) { 
+	.url-title-width{
+		width:250px;
+	}
+}
+@media (min-width: 550px) { 
+	.url-title-width{
+		width:350px;
+	}
+}
+
+@media (min-width: 768px) { 
+	.menu-right {
+		position:fixed;
+		right: 1px;
+		bottom: 3px;
+	}
+	.url-title-width{
+		width:500px;
+	}
+}
+
+@media (min-width: 992px) { 
+	.url-title-width{
+		width:140px;
+	}
+}
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) { 
+	.addUrlForm_pin{
+		width: 150px !important;
+	}
+	.url-title-width{
+		width:175px;
+	}
+	#addUrlForm_urlGroupSelect{
+		width: 135px;
+	}
+}

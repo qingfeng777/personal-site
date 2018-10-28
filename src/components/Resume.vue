@@ -1,6 +1,22 @@
 <template>
 
   <div>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="keywords" content="收库,收库123,云收藏,个性网址导航,自定义网址导航,网址收藏,全能搜索">
+      <meta name="description" content="《收库123 · shouku123.com》在这里可以定制，专属于您个人的网址导航主页。「全能搜索」：集成网上各类搜索于一个搜索框；「网址云收藏」：将网址收藏在云端，实现跨浏览器，跨终端，通过“收藏口令”实现免登录收藏网址。">
+      <meta name="baidu-site-verification" content="fJlGQD0Wk7">
+      <meta name="msvalidate.01" content="C449C89B946BACCAD4C1ECE08949EFF2">
+      <meta name="360-site-verification" content="5f3f3159cd9c838fd5b2b9cab4ea01a6">
+      <meta name="google-site-verification" content="fM_qJ0CDoCa-i5bsBkIEKkfx2I6jb27ESNQ4xHsScG4">
+      
+      <title>xi1zi</title>
+      <link href="./nav_files/default_user_icon.png" rel="shortcut icon">
+      <link href="./nav_files/bootstrap.min.css" rel="stylesheet">
+      <link href="./nav_files/mycolor.css" rel="stylesheet">
+      <link href="./nav_files/app_nav.css" rel="stylesheet">
+      <link href="./nav_files/skBase.css" rel="stylesheet">
+      <link href="./nav_files/indexNotLogin.css" rel="stylesheet">
+      
     <header class="header">
       <div class="top-bar container-fluid">
         <div class="actions">
@@ -444,6 +460,21 @@
 </template>
 
 <script>
+ import "../assets/plugins/jquery-1.12.4.min.js"     
+ import "@/assets/plugins/bootstrap/js/bootstrap.min.js"  
+ import "@/assets/plugins/back-to-top.js"  
+ import "../assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"  
+ import "@/assets/plugins/easy-pie-chart/dist/jquery.easypiechart.min.js"  
+ import imagesloaded from 'imagesloaded'
+// import "@/assets/plugins/imagesloaded.pkgd.min.js"  
+// import "@/assets/plugins/isotope.pkgd.min.js"  
+ import "@/assets/js/main.js"  
+ import "@/assets/js/demo/style-switcher.js"  
+
+
+export default{
+  name: 'Resume'
+}
 
 </script>
 

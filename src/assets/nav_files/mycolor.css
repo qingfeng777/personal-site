@@ -1,0 +1,138 @@
+@CHARSET "UTF-8";
+
+.myBgColor1 {
+	color: #FFFFFF !important;
+	border: 1px solid #ED5565;
+	background-color: #ED5565;
+}	
+.myBgColor1:hover{
+	color: #F7F7F7 !important;
+	border: 1px solid #DA4453 !important;
+	background-color: #DA4453 !important;
+}
+
+.myBgColor2 {
+	color: #FFFFFF !important;
+	border: 1px solid #FC6E51;
+	background-color: #FC6E51;
+}	
+.myBgColor2:hover {
+	color: #F7F7F7 !important;
+	border: 1px solid #E9573F !important;
+	background-color: #E9573F !important;
+}
+
+.myBgColor3 {
+	color: #FFFFFF !important;
+	border: 1px solid #FFCE54;
+	background-color: #FFCE54;
+}	
+.myBgColor3:hover {
+	color: #F7F7F7 !important;
+	border: 1px solid #F6BB42 !important;
+	background-color: #F6BB42 !important;
+}
+
+.myBgColor4 {
+	color: #FFFFFF !important;
+	border: 1px solid #A0D468;
+	background-color: #A0D468;
+}	
+.myBgColor4:hover {
+	color: #F7F7F7 !important;
+	border: 1px solid #8CC152 !important;
+	background-color: #8CC152 !important;
+}
+
+.myBgColor5 {
+	color: #FFFFFF !important;
+	border: 1px solid #48CFAD;
+	background-color: #48CFAD;
+}	
+.myBgColor5:hover{
+	color: #F7F7F7 !important;
+	border: 1px solid #37BC9B !important;
+	background-color: #37BC9B !important;
+}
+
+.myBgColor6 {
+	color: #FFFFFF !important;
+	border: 1px solid #4FC1E9;
+	background-color: #4FC1E9;
+}	
+.myBgColor6:hover {
+	color: #F7F7F7 !important;
+	border: 1px solid #3BAFDA !important;
+	background-color: #3BAFDA !important;
+}
+
+.myBgColor7 {
+	color: #FFFFFF !important;
+	border: 1px solid #5D9CEC;
+	background-color: #5D9CEC;
+}	
+.myBgColor7:hover {
+	color: #F7F7F7 !important;
+	border: 1px solid #4A89DC !important;
+	background-color: #4A89DC !important;
+}
+
+.myBgColor8 {
+	color: #FFFFFF !important;
+	border: 1px solid #AC92EC;
+	background-color: #AC92EC;
+}	
+.myBgColor8:hover {
+	color: #F7F7F7 !important;
+	border: 1px solid #967ADC !important;
+	background-color: #967ADC !important;
+}
+.myBgColor9 {
+	color: #FFFFFF !important;
+	border: 1px solid #EC87C0;
+	background-color: #EC87C0;
+}	
+.myBgColor9:hover {
+	color: #F7F7F7 !important;
+	border: 1px solid #D770AD !important;
+	background-color: #D770AD !important;
+}
+.myBgColor10 {
+	color: #FFFFFF !important;
+	border: 1px solid #AAB2BD;
+	background-color: #AAB2BD;
+}	
+.myBgColor10:hover {
+	color: #F7F7F7 !important;
+	border: 1px solid #9BA0A7 !important;
+	background-color: #9BA0A7 !important;
+}
+.myBgColor11 {
+	color: #FFFFFF !important;
+	border: 1px solid #DADADA;
+	background-color: #DADADA;
+}	
+.myBgColor11:hover {
+	color: #F7F7F7 !important;
+	border: 1px solid #C9C9C9 !important;
+	background-color: #C9C9C9 !important;
+}
+
+.myBgColor12 {
+	color: #FFFFFF !important;
+	border: 1px solid #E6E9ED;
+	background-color: #E6E9ED;
+}	
+.myBgColor12:hover {
+	color: #F7F7F7 !important;
+	border: 1px solid #DEE0E3 !important;
+	background-color: #DEE0E3 !important;
+}
+
+
+.myButtonColor {
+	color: #c0c0c0;
+}	
+.myButtonColorB {
+	color: #9BA0A7 !important;
+}
