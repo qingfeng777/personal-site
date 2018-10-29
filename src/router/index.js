@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Resume from '@/components/Resume'
 import nav from '@/pages/nav'
 import index from '@/pages/index'
+import home from '@/pages/home'
+import manager from '@/pages/manager/home'
 
 Vue.use(Router)
 
@@ -21,6 +23,15 @@ export default new Router({
         {
           path:"/resume",
           component:Resume
+        },
+        {
+          path:"/blog",
+          component:home
+        },
+        // not herer
+        { 
+          path:"/manager",
+          component:manager
         }
       ]
     }

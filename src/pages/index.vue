@@ -12,10 +12,15 @@
             </router-link>
           </li>
           <li>
-                <router-link to="/resume">
-                　　MyBlog        
-                </router-link>
-              </li>
+            <router-link to="/blog">
+            　　MyBlog        
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/manager">
+            　　manage        
+            </router-link>
+          </li>
         </ul>
         
         <router-view />
