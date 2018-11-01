@@ -37,6 +37,7 @@ export default new Router({
         {
           path:"/blog",
           component:blogNav,
+          redirect: '/blog/home',
           children:[
             {
               path:"/blog/home",
@@ -64,6 +65,7 @@ export default new Router({
         { 
           path:"/manager",
           component:managerNav,
+          redirect:'/manager/home',
           children:[
             {
               path:'/manager/edit',

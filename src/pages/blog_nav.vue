@@ -1,29 +1,6 @@
 <template>
 
         <div class="index">
-                <ul>
-              <li>
-                <router-link to="/blog/home">
-                    博客首页
-                </router-link>
-              </li>
-              <li>
-                <router-link to="/blog/detail">
-                  详情/最新？        
-                </router-link>
-              </li>
-              <li>
-                <router-link to="/blog/all">
-                　　所有博客        
-                </router-link>
-              </li>
-              <li>
-                <router-link to="/blog/message_board">
-                    message board        
-                </router-link>
-              </li>
-            </ul>
-
             <div class="user-select">
             <header class="header">
                     <nav class="navbar navbar-default" id="navbar">
@@ -40,7 +17,7 @@
                                  勤记录 懂分享</div>
                       <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar" aria-expanded="false"> <span class="sr-only"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                        <h1 class="logo hvr-bounce-in"><a href="#" title="木庄网络博客"><img src="images/201610171329086541.png" alt="木庄网络博客"></a></h1>
+                        <h1 class="logo hvr-bounce-in"><a href="#" title="木庄网络博客"><img src="../assets/images/201610171329086541.png" alt="木庄网络博客"></a></h1>
                       </div>
                       <div class="collapse navbar-collapse" id="header-navbar">
                         <form class="navbar-form visible-xs" action="/Search" method="post">
@@ -51,10 +28,31 @@
                             </span> </div>
                         </form>
                         <ul class="nav navbar-nav navbar-right">
-                          <li><a data-cont="木庄网络博客" title="木庄网络博客" href="index.html">首页</a></li>
-                          <li><a data-cont="列表页" title="列表页" href="list.html">列表页</a></li>
-                          <li><a data-cont="详细页" title="详细页" href="show.html">详细页</a></li>
-                          <li><a data-cont="404" title="404" href="404.html">404</a></li>
+                          <li>
+                                <router-link to="/blog/home">
+                                    博客首页
+                                </router-link>
+                          </li>
+                          <li>
+                                <router-link to="/blog/detail">
+                                    详情/最新？        
+                                  </router-link>
+                          </li>
+                          <li>
+                                <router-link to="/blog/all">
+                                    　　所有博客        
+                                </router-link>
+                            
+                          </li>
+                          <li>
+                                <router-link to="/blog/message_board">
+                                    message board        
+                                </router-link>
+                          </li>
+
+
+
+                          
                           <li><a data-cont="MZ-NetBolg主题" title="MZ-NetBolg主题" href="#" >MZ-NetBolg主题</a></li>
                           <li><a data-cont="IT技术笔记" title="IT技术笔记" href="#" >IT技术笔记</a></li>
                           <li><a data-cont="源码分享" title="源码分享" href="#" >源码分享</a></li>
@@ -91,8 +89,8 @@
 
 
 <script>
-//<link rel="apple-touch-icon-precomposed" href="images/icon.png">
-//<link rel="shortcut icon" href="images/favicon.ico">
+//<link rel="apple-touch-icon-precomposed" href="../assets/images/icon.png">
+//<link rel="shortcut icon" href="../assets/images/favicon.ico">
 </script>
 
 
