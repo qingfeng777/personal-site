@@ -2,9 +2,10 @@
 // const dev = window.CONFIG.mock
 // let api = window.CONFIG.api
 // if (dev) { api = window.CONFIG.mockApi }
-import config from '../../app-config'
+//import config from '../../app-config'
+import config from '../config'
 
-export const api = config.api //window.CONFIG.mock ? window.CONFIG.mockApi : window.CONFIG.api
+export const api = {paas:"127.0.0.1/api"}  //config.api //window.CONFIG.mock ? window.CONFIG.mockApi : window.CONFIG.api
 
 import axios from 'axios'
 // axios.defaults.baseURL = config.loginApi
