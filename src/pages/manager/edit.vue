@@ -5,7 +5,7 @@
             <div class="content-wrap">
             <div class="content">
               <header class="article-header">
-                <h1 class="article-title"><a href="#" title="用DTcms做一个独立响应式模板" >Title Location</a></h1>
+                <h1 class="article-title"><a href="#" title="起来，起来，起来" >Title Location</a></h1>
                 <div class="article-meta"> <span class="item article-meta-time">
                   <time class="time" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="发表时间：2016-10-14"><i class="glyphicon glyphicon-time"></i> 2016-10-14</time>
                   </span> <span class="item article-meta-source" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="来源：木庄网络博客"><i class="glyphicon glyphicon-globe"></i> 木庄网络博客</span> <span class="item article-meta-category" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="MZ-NetBlog主题"><i class="glyphicon glyphicon-list"></i> <a href="#" title="MZ-NetBlog主题" >MZ-NetBlog主题</a></span> <span class="item article-meta-views" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="浏览量：219"><i class="glyphicon glyphicon-eye-open"></i> 219</span> <span class="item article-meta-comment" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="评论量"><i class="glyphicon glyphicon-comment"></i> 4</span> </div>
@@ -39,7 +39,9 @@
 
               <div id="postcomments">
                 <ol id="comment_list" class="commentlist">        
-                <li class="comment-content"><span class="comment-f">#1</span><div class="comment-main"><p><a class="address" href="#" rel="nofollow" target="_blank">何妨吟啸且徐行</a><span class="time">(2016/10/14 21:02:39)</span><br>一骑战马任平生！</p></div></li></ol>
+                <li class="comment-content"><span class="comment-f">#1</span><div class="comment-main"><p><a class="address" href="#" rel="nofollow" target="_blank">何妨吟啸且徐行</a>
+                
+                <br>谁怕，一骑战马任平生！</p></div></li></ol>
               </div>
             </div>
                     
@@ -48,16 +50,16 @@
             <div class="fixed">
               <div class="widget widget-tabs">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li role="presentation" class="active"><a href="#notice" aria-controls="notice" role="tab" data-toggle="tab" draggable="false">统计信息</a></li>
-                  <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab" draggable="false">联系站长</a></li>
+                  <li role="presentation" class="active"><a href="#notice" aria-controls="notice" role="tab" data-toggle="tab" draggable="false">这是1</a></li>
+                  <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab" draggable="false">这是2</a></li>
                 </ul>
                 <div class="tab-content">
                   <div role="tabpanel" class="tab-pane contact active" id="notice">
-                    <h2>日志总数:
-                          888篇
+                    <h2>
+                      write something
                       </h2>
-                      <h2>网站运行:
-                      <span id="sitetime">88天 </span></h2>
+                      <h2>say to
+                      <span id="sitetime">self </span></h2>
                   </div>
                     <div role="tabpanel" class="tab-pane contact" id="contact">
                       <h2>QQ:
@@ -71,25 +73,25 @@
               <div class="widget widget_search">
                 <form class="navbar-form" action="/Search" method="post">
                   <div class="input-group">
-                    <input type="text" name="keyword" class="form-control" size="35" placeholder="请输入关键字" maxlength="15" autocomplete="off">
+                    <input type="text" name="keyword" class="form-control" size="35" placeholder="对自己说" maxlength="15" autocomplete="off">
                     <span class="input-group-btn">
-                    <button class="btn btn-default btn-search" name="search" type="submit">搜索</button>
+                    <button class="btn btn-default btn-search" name="search" type="submit">添加</button>
                     </span> </div>
                 </form>
               </div>
             </div>
             <div class="widget widget_hot">
-                  <h3>最新评论文章</h3>
+                  <h3>记得多清？你有多想？</h3>
                   <ul>
                     
-            <li><a title="用DTcms做一个独立博客网站（响应式模板）" href="#" ><span class="thumbnail">
-            <img class="thumb" data-original="images/201610181739277776.jpg" src="images/201610181739277776.jpg" alt="用DTcms做一个独立博客网站（响应式模板）"  style="display: block;">
-            </span><span class="text">用DTcms做一个独立博客网站（响应式模板）</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
+            <li><a title="要坐直" href="#" ><span class="thumbnail">
+            <img class="thumb" src="../../assets/images/201610181739277776.jpg" alt="用傻笑世界"  style="display: block;">
+            </span><span class="text">坐直身体好</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
             2016-11-01
             </span><span class="muted"><i class="glyphicon glyphicon-eye-open"></i>88</span></a></li>
-            <li><a title="用DTcms做一个独立博客网站（响应式模板）" href="#" ><span class="thumbnail">
-            <img class="thumb" data-original="images/201610181739277776.jpg" src="images/201610181739277776.jpg" alt="用DTcms做一个独立博客网站（响应式模板）"  style="display: block;">
-            </span><span class="text">用DTcms做一个独立博客网站（响应式模板）</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
+            <li><a title="多活动" href="#" ><span class="thumbnail">
+            <img class="thumb" data-original="../../assets/images/201610181739277776.jpg" src="../../assets/images/201610181739277776.jpg" alt="以柔布棋局"  style="display: block;">
+            </span><span class="text">身体是革命的本钱</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
             2016-11-01
             </span><span class="muted"><i class="glyphicon glyphicon-eye-open"></i>88</span></a></li>
             
@@ -98,8 +100,8 @@
 
               <div class="widget widget_sentence">
             
-            <a href="#" target="_blank" rel="nofollow" title="专业" >
-                <img style="width: 100%" src="images/201610241224221511.jpg" alt="专业网站建设" ></a>
+            <!-- <a href="#" target="_blank" rel="nofollow" title="专业" > 广告
+                <img style="width: 100%" src="../../assets/images/201610241224221511.jpg" alt="专业写bug" ></a> -->
             
             </div>
             </aside>

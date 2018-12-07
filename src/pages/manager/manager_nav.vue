@@ -6,16 +6,6 @@
       <header class="header">
               <nav class="navbar navbar-default" id="navbar">
               <div class="container">
-                <div class="header-topbar hidden-xs link-border">
-                  <ul class="site-nav topmenu">
-                    <li><a href="#" >标签云</a></li>
-                      <li><a href="#" rel="nofollow" >读者墙</a></li>
-                      <li><a href="#" title="RSS订阅" >
-                          <i class="fa fa-rss">
-                          </i> RSS订阅
-                      </a></li>
-                  </ul>
-                           勤记录 懂分享</div>
                 <div class="navbar-header">
                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar" aria-expanded="false"> <span class="sr-only"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                   <h1 class="logo hvr-bounce-in"><a href="#" title="木庄网络博客"><img src="../../assets/images/201610171329086541.png" alt="木庄网络博客"></a></h1>
