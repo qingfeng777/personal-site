@@ -5,7 +5,7 @@
 //import config from '../../app-config'
 import config from '../config'
 
-export const api = {paas:"127.0.0.1/api"}  //config.api //window.CONFIG.mock ? window.CONFIG.mockApi : window.CONFIG.api
+export const api = {paas:"http://127.0.0.1:7878/ming"}  //config.api //window.CONFIG.mock ? window.CONFIG.mockApi : window.CONFIG.api
 
 import axios from 'axios'
 // axios.defaults.baseURL = config.loginApi
@@ -45,8 +45,8 @@ export function fetch (url, method, data, params) {
       // responseType: 'json',
       headers: {
         // 序列化后的 JSON 字符串
-        'Content-Type': 'application/json'
-        // 'Content-Type': 'application/x-www-form-urlencoded'
+        //'Content-Type': 'application/json'
+        'Content-Type': 'application/x-www-form-urlencoded'
       },
       withCredentials: true,
       transformRequest: [function (data) {
