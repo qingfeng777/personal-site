@@ -20,7 +20,7 @@
               <br/> <br/> <br/>
               <div class="input-group input-group-lg">
                 <span class="input-group-addon" id="sizing-addon1">摘要</span>
-                <input type="text" class="form-control" placeholder="简要概括" aria-describedby="sizing-addon1">
+                <input type="text" class="form-control" placeholder="简要概括" aria-describedby="sizing-addon1" v-model="article.keyWord">
               </div>
 
               <br/>
@@ -34,6 +34,21 @@
 
               <br/> <br/> <br/>
               <p>
+                
+                <!-- Single button -->
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Action <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button type="button" @click="submit" class="btn btn-primary btn-lg">submit</button>
               </p>
 
@@ -131,6 +146,7 @@
         article: {
           title: "article title",
           content: "article content, hello ming. It's a long time after laster time I see you .  ",
+          keyWord: "",
           tag:[
             "tagCategory"
           ]
@@ -143,6 +159,7 @@
       ]),
       // ---邮件服务器信息获取--- //
       'open': function () {
+        debugger
         fetchMailServer._getMailServer()
         .then(res => {
           if (res.data === '') {
@@ -166,40 +183,26 @@
           console.log(error.msg)
           alert('article.urlWrong')
         })
-      },
-      // 传数据前更换数据容器
-      // beforeCreate () {
-      //   if (this.formCustom.type === 'email') {
-      //     this.formCustom.val = this.formCustom.recEmail
-      //   } else {
-      //     this.formCustom.val = this.formCustom.recUrl
-      //   }
-      //   this.formData.name = this.formCustom.name
-      //   this.formData.type = this.formCustom.type
-      //   this.formData.desc = this.formCustom.desc
-      //   this.formData.val = this.formCustom.val
-      // },
-      'submit': function () {
-        //this.beforeCreate()
-            fetcharticle._create(this.article)
-            .then(res => {
-              this.getList()
-              //modal.close()
-              alert(name + 'base.create' + 'base.success')
-            })
-            .catch((error) => {
-              if (error.response.data.code === 500) {
-                alert(name + 'base.create' + 'base.fail')
-              } else {
-                alert(error.response.data.message)
-              }
-              //modal.close()
-            })
-      },
-      'close': function () {
-        this.$refs['formCustom'].resetFields()
       }
-    }
+    },
+    mounted () {
+      console.log("hello, 1")
+      // fetch category show in 下拉框
+      // fetcharticle._create(this.article)
+      //       .then(res => {
+      //         this.getList()
+      //         //modal.close()
+      //         alert(name + 'base.create' + 'base.success')
+      //       })
+      //       .catch((error) => {
+      //         if (error.response.data.code === 500) {
+      //           alert(name + 'base.create' + 'base.fail')
+      //         } else {
+      //           alert(error.response.data.message)
+      //         }
+      //         //modal.close()
+      //       })  
+    },
   }
 </script>
 
