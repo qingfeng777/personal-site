@@ -34,20 +34,25 @@
 
               <br/> <br/> <br/>
               <p>
-                
-                <!-- Single button -->
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Action <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </div>
+
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="input-group">
+                      <input type="text" class="form-control" aria-label="..." v-model="category">
+                      <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+                       <ul class="dropdown-menu" v-for="cate in categorys" v-model="category">
+                        <li><a href="#">{{cate.name}}</a></li>
+                        <!-- <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li> -->
+                      </ul>
+                      </div><!-- /btn-group -->
+                    </div><!-- /input-group -->
+                  </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+              
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button type="button" @click="submit" class="btn btn-primary btn-lg">submit</button>
               </p>
@@ -136,7 +141,8 @@
     
     <script>
       import fetcharticle from '../../fetch/article'
-        import { mapActions } from 'vuex'
+      import fetchcategory from '../../fetch/category'
+      import { mapActions } from 'vuex'
 
       export default {
     mixins: [10],
@@ -150,7 +156,9 @@
           tag:[
             "tagCategory"
           ]
-        }
+        },
+        categorys: ['hello', 'world'],
+        category: '',
       }  
     },
     methods: {
@@ -187,12 +195,14 @@
     },
     mounted () {
       console.log("hello, 1")
-      // fetch category show in 下拉框
-      // fetcharticle._create(this.article)
+      //fetch category show in 下拉框
+      // fetchcategory._getList()
       //       .then(res => {
-      //         this.getList()
+      //         debugger
+      //         //this.getList()
       //         //modal.close()
-      //         alert(name + 'base.create' + 'base.success')
+      //         this.categorys = res.data
+      //        // alert(res.msg)
       //       })
       //       .catch((error) => {
       //         if (error.response.data.code === 500) {
