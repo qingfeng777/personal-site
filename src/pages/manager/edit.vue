@@ -38,23 +38,22 @@
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="input-group">
-                      <input type="text" class="form-control" aria-label="..." v-model="category">
+                      <input type="text" class="form-control" placeholder="分类" aria-label="..." v-model="article.category">
                       <div class="input-group-btn">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
-                       <ul class="dropdown-menu" v-for="cate in categorys" v-model="category">
-                        <li><a href="#">{{cate.name}}</a></li>
-                        <!-- <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">选择 </button>
+                       <ul class="dropdown-menu" v-for="cate in categorys">
+                        <li><a href="#">{{cate.name}}234</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <!-- <li><a href="#">Something else here</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="#">Separated link</a></li> -->
                       </ul>
                       </div><!-- /btn-group -->
                     </div><!-- /input-group -->
                   </div><!-- /.col-lg-6 -->
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="button" @click="submit" class="btn btn-primary btn-lg">提交</button>
                 </div><!-- /.row -->
-              
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <button type="button" @click="submit" class="btn btn-primary btn-lg">submit</button>
               </p>
 
               <div id="postcomments">
@@ -154,12 +153,12 @@
           content: "article content, hello ming. It's a long time after laster time I see you .  ",
           keyWord: "",
           tag:[
-            "tagCategory"
-          ]
+            "tags"
+          ],
+          category: 'cate',
         },
-        categorys: ['hello', 'world'],
-        category: '',
-      }  
+        categorys: ['hello', 'world']
+      }
     },
     methods: {
       ...mapActions('article', [
@@ -180,6 +179,23 @@
         .catch((error) => {
           console.log(error.response.data.message)
         })
+      },
+     'submit': function () {
+        //this.beforeCreate()
+            fetcharticle._create(this.article)
+            .then(res => {
+              this.getList()
+              //modal.close()
+              alert(name + 'base.create' + 'base.success')
+            })
+            .catch((error) => {
+              if (error.response.data.code === 500) {
+                alert(name + 'base.create' + 'base.fail')
+              } else {
+                alert(error.response.data.message)
+              }
+              //modal.close()
+            })
       },
       // 测试webhook url格式按钮，格式错误也可保存
       webhookTest () {
@@ -223,7 +239,6 @@
     
     @import "../../assets/css/nprogress.css";
     @import "../../assets/css/font-awesome.min.css";
-    
     @import "../../assets/nav_files/mycolor.css";
     @import "../../assets/plugins/bootstrap/css/bootstrap.min.css";   
     @import "../../assets/plugins/font-awesome/css/font-awesome.css";
