@@ -5,14 +5,13 @@
             <div class="content-wrap">
             <div class="content">
               <header class="article-header">
-                <h1 class="article-title"><a href="#" title="起来，起来，起来" >Title Location</a></h1>
-                <div class="article-meta"> <span class="item article-meta-time">
-                  <time class="time" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="发表时间：2016-10-14"><i class="glyphicon glyphicon-time"></i> 2016-10-14</time>
-                  </span> <span class="item article-meta-source" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="来源：木庄网络博客"><i class="glyphicon glyphicon-globe"></i> 木庄网络博客</span> <span class="item article-meta-category" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="MZ-NetBlog主题"><i class="glyphicon glyphicon-list"></i> <a href="#" title="MZ-NetBlog主题" >MZ-NetBlog主题</a></span> <span class="item article-meta-views" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="浏览量：219"><i class="glyphicon glyphicon-eye-open"></i> 219</span> <span class="item article-meta-comment" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="评论量"><i class="glyphicon glyphicon-comment"></i> 4</span> </div>
+                <div class="input-group title">
+                  <textarea class="form-control" aria-label="With textarea" v-model="article.title"></textarea>
+                </div>
               </header>
               <article class="article-content">
                 <div id="main">
-                    <mavon-editor v-model="article.content" editable=false value="write ething "/>
+                    <mavon-editor v-model="article.content" editable=false />
                 </div>
                 
               </article>
@@ -26,7 +25,7 @@
               <br/>
               <div class="input-group">
                 <span class="input-group-addon">Tag </span>
-                <input type="text" placeholder="tag  ',' 分隔 " class="form-control" aria-label="Amount (to the nearest dollar)">
+                <input type="text" placeholder="tag  ',' 分隔 " v-model="tags" class="form-control" aria-label="Amount (to the nearest dollar)">
                 <span class="input-group-addon">
                   <button class="btn-group btn-group-sm" type="button">选择已有Tag</button>
                 </span>
@@ -40,13 +39,9 @@
                     <div class="input-group">
                       <input type="text" class="form-control" placeholder="分类" aria-label="..." v-model="article.category">
                       <div class="input-group-btn">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">选择 </button>
-                       <ul class="dropdown-menu" v-for="cate in categorys">
-                        <li><a href="#">{{cate.name}}234</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <!-- <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li> -->
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">可选项 </button>
+                       <ul class="dropdown-menu" v-model="article.category">
+                        <li  v-for="(cate,index) in categorys" @click="selectCate(cate)">{{cate.name}}</li>       
                       </ul>
                       </div><!-- /btn-group -->
                     </div><!-- /input-group -->
@@ -57,15 +52,15 @@
               </p>
 
               <div id="postcomments">
-                <ol id="comment_list" class="commentlist">        
-                <li class="comment-content"><span class="comment-f">#1</span><div class="comment-main"><p><a class="address" href="#" rel="nofollow" target="_blank">何妨吟啸且徐行</a>
+                <ol id="comment_list" class="commentlist">
+                <li class="comment-content"><span class="comment-f"></span><div class="comment-main"><p><a class="address" href="#" rel="nofollow" target="_blank">何妨吟啸且徐行</a>
                 
                 <br>谁怕，一骑战马任平生！</p></div></li></ol>
               </div>
             </div>
                     
             </div>
-            <aside class="sidebar">
+            <aside class="sidebar" v-show="true">
             <div class="fixed">
               <div class="widget widget-tabs">
                 <ul class="nav nav-tabs" role="tablist">
@@ -153,11 +148,14 @@
           content: "article content, hello ming. It's a long time after laster time I see you .  ",
           keyWord: "",
           tag:[
-            "tags"
+            ""
           ],
-          category: 'cate',
+          category: '未分类',
         },
-        categorys: ['hello', 'world']
+        categorys: [
+          {name:'获取失败'}
+        ],
+        tags: ''
       }
     },
     methods: {
@@ -181,21 +179,28 @@
         })
       },
      'submit': function () {
-        //this.beforeCreate()
-            fetcharticle._create(this.article)
-            .then(res => {
-              this.getList()
-              //modal.close()
-              alert(name + 'base.create' + 'base.success')
-            })
-            .catch((error) => {
-              if (error.response.data.code === 500) {
-                alert(name + 'base.create' + 'base.fail')
-              } else {
-                alert(error.response.data.message)
-              }
-              //modal.close()
-            })
+        if (this.tags === '') {
+          return
+        }else{
+          this.article.tag = this.tags.split(",")
+        }
+        fetcharticle._create(this.article)
+        .then(res => {
+          //this.getList()
+          //modal.close()
+          alert(name + 'base.create' + 'base.success')
+        })
+        .catch((error) => {
+          if (error.response.data.code === 500) {
+            alert(name + 'base.create' + 'base.fail')
+          } else {
+            alert(error.response.data.message)
+          }
+          //modal.close()
+        })
+      },
+      'selectCate': function (cate) {
+        this.article.category = cate.name
       },
       // 测试webhook url格式按钮，格式错误也可保存
       webhookTest () {
@@ -212,22 +217,19 @@
     mounted () {
       console.log("hello, 1")
       //fetch category show in 下拉框
-      // fetchcategory._getList()
-      //       .then(res => {
-      //         debugger
-      //         //this.getList()
-      //         //modal.close()
-      //         this.categorys = res.data
-      //        // alert(res.msg)
-      //       })
-      //       .catch((error) => {
-      //         if (error.response.data.code === 500) {
-      //           alert(name + 'base.create' + 'base.fail')
-      //         } else {
-      //           alert(error.response.data.message)
-      //         }
-      //         //modal.close()
-      //       })  
+      fetchcategory._getList()
+            .then(res => {
+              this.categorys = res.data
+             // alert(res.msg)
+            })
+            .catch((error) => {
+              if (error.response.data.code === 500) {
+                alert(name + 'base.create' + 'base.fail')
+              } else {
+                alert(error.response.data.message)
+              }
+              //modal.close()
+            })  
     },
   }
 </script>
@@ -243,6 +245,15 @@
     @import "../../assets/plugins/bootstrap/css/bootstrap.min.css";   
     @import "../../assets/plugins/font-awesome/css/font-awesome.css";
     @import "../../assets/css/styles.css";
+
+    .title{
+      margin-left: 5%;
+      width: 85%;
+    }
+    .col-lg-6{
+      width: 35%;
+      margin-left: 10%;
+    }
     
     </style>
     
