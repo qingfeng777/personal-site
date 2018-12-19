@@ -35,24 +35,24 @@
                           </li>
                           <li>
                                 <router-link to="/blog/detail">
-                                    详情/最新？        
+                                    详情/最新？
                                   </router-link>
                           </li>
                           <li>
                                 <router-link to="/blog/all">
-                                    　　所有博客        
+                                    　　所有博客
                                 </router-link>
-                            
+
                           </li>
                           <li>
                                 <router-link to="/blog/message_board">
-                                    message board        
+                                    message board
                                 </router-link>
                           </li>
 
 
 
-                          
+
                           <li><a data-cont="MZ-NetBolg主题" title="MZ-NetBolg主题" href="#" >MZ-NetBolg主题</a></li>
                           <li><a data-cont="IT技术笔记" title="IT技术笔记" href="#" >IT技术笔记</a></li>
                           <li><a data-cont="源码分享" title="源码分享" href="#" >源码分享</a></li>
@@ -63,7 +63,7 @@
                     </div>
                     </nav>
                     </header>
-                    
+
                     <router-view />
 
                     <footer class="footer">
@@ -101,7 +101,7 @@
 @import "../assets/css/font-awesome.min.css";
 
 @import "../assets/nav_files/mycolor.css";
-@import "../assets/plugins/bootstrap/css/bootstrap.min.css";   
+@import "../assets/plugins/bootstrap/css/bootstrap.min.css";
 @import "../assets/plugins/font-awesome/css/font-awesome.css";
 @import "../assets/css/styles.css";
 

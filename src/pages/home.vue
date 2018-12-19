@@ -27,16 +27,16 @@
             </article>
           <div class="title">
             <h3>最新发布</h3>
-            <div class="more">                
-                    <a href="#" title="MZ-NetBlog主题" >MZ-NetBlog主题</a>                
-                    <a href="#" title="IT技术笔记" >IT技术笔记</a>                
-                    <a href="#" title="源码分享" >源码分享</a>                
-                    <a href="#" title="靠谱网赚" >靠谱网赚</a>                
-                    <a href="#" title="资讯分享" >资讯分享</a>                
+            <div class="more">
+                    <a href="#" title="MZ-NetBlog主题" >MZ-NetBlog主题</a>
+                    <a href="#" title="IT技术笔记" >IT技术笔记</a>
+                    <a href="#" title="源码分享" >源码分享</a>
+                    <a href="#" title="靠谱网赚" >靠谱网赚</a>
+                    <a href="#" title="资讯分享" >资讯分享</a>
                 </div>
           </div>
           <article class="excerpt excerpt-1" style="">
-          <a class="focus" href="#" title="用DTcms做一个独立博客网站（响应式模板）" target="_blank" ><img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776.jpg" alt="用DTcms做一个独立博客网站（响应式模板）"  style="display: inline;"></a>
+          <a class="focus" href="#" title="用DTcms做一个独立博客网站（响应式模板）" target="_blank" ><img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776ed.jpg" alt="用DTcms做一个独立博客网站（响应式模板）" style="display: inline;"></a>
                 <header><a class="cat" href="#" title="MZ-NetBlog主题" >MZ-NetBlog主题<i></i></a>
                     <h2><a href="#" title="用DTcms做一个独立博客网站（响应式模板）" target="_blank" >用DTcms做一个独立博客网站（响应式模板）</a>
                     </h2>
@@ -47,7 +47,7 @@
                 </p>
                 <p class="note">用DTcms做一个独立博客网站（响应式模板），采用DTcms V4.0正式版（MSSQL）。开发环境：SQL2008R2+VS2010。DTcms V4.0正式版功能修复和优化：1、favicon.ico图标后台上传。（解决要换图标时要连FTP或者开服务器的麻烦）</p>
             </article>
-          <article class="excerpt excerpt-2" style=""><a class="focus" href="#" title="用DTcms做一个独立博客网站（响应式模板）" target="_blank" ><img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776.jpg" alt="用DTcms做一个独立博客网站（响应式模板）"  style="display: inline;"></a>
+          <article class="excerpt excerpt-2" style=""><a class="focus" href="#" title="用DTcms做一个独立博客网站（响应式模板）" target="_blank" ><img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776ed.jpg" alt="用DTcms做一个独立博客网站（响应式模板）" style="display: inline;"></a>
                 <header><a class="cat" href="#" title="MZ-NetBlog主题" >MZ-NetBlog主题<i></i></a>
                     <h2><a href="#" title="用DTcms做一个独立博客网站（响应式模板）" target="_blank" >用DTcms做一个独立博客网站（响应式模板）</a>
                     </h2>
@@ -58,7 +58,7 @@
                 </p>
                 <p class="note">用DTcms做一个独立博客网站（响应式模板），采用DTcms V4.0正式版（MSSQL）。开发环境：SQL2008R2+VS2010。DTcms V4.0正式版功能修复和优化：1、favicon.ico图标后台上传。（解决要换图标时要连FTP或者开服务器的麻烦）</p>
             </article>
-          <article class="excerpt excerpt-3" style=""><a class="focus" href="#" title="用DTcms做一个独立博客网站（响应式模板）" target="_blank" ><img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776.jpg" alt="用DTcms做一个独立博客网站（响应式模板）"  style="display: inline;"></a>
+          <article class="excerpt excerpt-3" style=""><a class="focus" href="#" title="用DTcms做一个独立博客网站（响应式模板）" target="_blank" ><img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776ed.jpg" alt="用DTcms做一个独立博客网站（响应式模板）" style="display: inline;"></a>
                 <header><a class="cat" href="#" title="MZ-NetBlog主题" >MZ-NetBlog主题<i></i></a>
                     <h2><a href="#" title="用DTcms做一个独立博客网站（响应式模板）" target="_blank" >用DTcms做一个独立博客网站（响应式模板）</a>
                     </h2>
@@ -69,7 +69,7 @@
                 </p>
                 <p class="note">用DTcms做一个独立博客网站（响应式模板），采用DTcms V4.0正式版（MSSQL）。开发环境：SQL2008R2+VS2010。DTcms V4.0正式版功能修复和优化：1、favicon.ico图标后台上传。（解决要换图标时要连FTP或者开服务器的麻烦）</p>
             </article>
-          <article class="excerpt excerpt-4" style=""><a class="focus" href="#" title="用DTcms做一个独立博客网站（响应式模板）" target="_blank" ><img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776.jpg" alt="用DTcms做一个独立博客网站（响应式模板）"  style="display: inline;"></a>
+          <article class="excerpt excerpt-4" style=""><a class="focus" href="#" title="用DTcms做一个独立博客网站（响应式模板）" target="_blank" ><img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776ed.jpg" alt="用DTcms做一个独立博客网站（响应式模板）" style="display: inline;"></a>
                 <header><a class="cat" href="#" title="MZ-NetBlog主题" >MZ-NetBlog主题<i></i></a>
                     <h2><a href="#" title="用DTcms做一个独立博客网站（响应式模板）" target="_blank" >用DTcms做一个独立博客网站（响应式模板）</a>
                     </h2>
@@ -80,7 +80,7 @@
                 </p>
                 <p class="note">用DTcms做一个独立博客网站（响应式模板），采用DTcms V4.0正式版（MSSQL）。开发环境：SQL2008R2+VS2010。DTcms V4.0正式版功能修复和优化：1、favicon.ico图标后台上传。（解决要换图标时要连FTP或者开服务器的麻烦）</p>
             </article>
-          <article class="excerpt excerpt-5" style=""><a class="focus" href="#" title="用DTcms做一个独立博客网站（响应式模板）" target="_blank" ><img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776.jpg" alt="用DTcms做一个独立博客网站（响应式模板）"  style="display: inline;"></a>
+          <article class="excerpt excerpt-5" style=""><a class="focus" href="#" title="用DTcms做一个独立博客网站（响应式模板）" target="_blank" ><img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776ed.jpg" alt="用DTcms做一个独立博客网站（响应式模板）" style="display: inline;"></a>
                 <header><a class="cat" href="#" title="MZ-NetBlog主题" >MZ-NetBlog主题<i></i></a>
                     <h2><a href="#" title="用DTcms做一个独立博客网站（响应式模板）" target="_blank" >用DTcms做一个独立博客网站（响应式模板）</a>
                     </h2>
@@ -139,57 +139,57 @@
         </div>
         <div class="widget widget_hot">
               <h3>最新评论文章</h3>
-              <ul>            
+              <ul>
                     <li><a title="用DTcms做一个独立博客网站（响应式模板）" href="#" ><span class="thumbnail">
-                        <img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776.jpg" alt="用DTcms做一个独立博客网站（响应式模板）"  style="display: block;">
+                        <img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776ed.jpg" alt="用DTcms做一个独立博客网站（响应式模板）" style="display: block;">
                     </span><span class="text">用DTcms做一个独立博客网站（响应式模板）</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
                         2016-11-01
                     </span><span class="muted"><i class="glyphicon glyphicon-eye-open"></i>88</span></a></li>
                     <li><a title="用DTcms做一个独立博客网站（响应式模板）" href="#" ><span class="thumbnail">
-                        <img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776.jpg" alt="用DTcms做一个独立博客网站（响应式模板）"  style="display: block;">
+                        <img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776ed.jpg" alt="用DTcms做一个独立博客网站（响应式模板）" style="display: block;">
                     </span><span class="text">用DTcms做一个独立博客网站（响应式模板）</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
                         2016-11-01
                     </span><span class="muted"><i class="glyphicon glyphicon-eye-open"></i>88</span></a></li>
                     <li><a title="用DTcms做一个独立博客网站（响应式模板）" href="#" ><span class="thumbnail">
-                        <img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776.jpg" alt="用DTcms做一个独立博客网站（响应式模板）"  style="display: block;">
+                        <img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776ed.jpg" alt="用DTcms做一个独立博客网站（响应式模板）" style="display: block;">
                     </span><span class="text">用DTcms做一个独立博客网站（响应式模板）</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
                         2016-11-01
                     </span><span class="muted"><i class="glyphicon glyphicon-eye-open"></i>88</span></a></li>
                     <li><a title="用DTcms做一个独立博客网站（响应式模板）" href="#" ><span class="thumbnail">
-                        <img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776.jpg" alt="用DTcms做一个独立博客网站（响应式模板）"  style="display: block;">
+                        <img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776ed.jpg" alt="用DTcms做一个独立博客网站（响应式模板）" style="display: block;">
                     </span><span class="text">用DTcms做一个独立博客网站（响应式模板）</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
                         2016-11-01
                     </span><span class="muted"><i class="glyphicon glyphicon-eye-open"></i>88</span></a></li>
                     <li><a title="用DTcms做一个独立博客网站（响应式模板）" href="#" ><span class="thumbnail">
-                        <img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776.jpg" alt="用DTcms做一个独立博客网站（响应式模板）"  style="display: block;">
+                        <img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776ed.jpg" alt="用DTcms做一个独立博客网站（响应式模板）" style="display: block;">
                     </span><span class="text">用DTcms做一个独立博客网站（响应式模板）</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
                         2016-11-01
                     </span><span class="muted"><i class="glyphicon glyphicon-eye-open"></i>88</span></a></li>
                     <li><a title="用DTcms做一个独立博客网站（响应式模板）" href="#" ><span class="thumbnail">
-                        <img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776.jpg" alt="用DTcms做一个独立博客网站（响应式模板）"  style="display: block;">
+                        <img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776ed.jpg" alt="用DTcms做一个独立博客网站（响应式模板）" style="display: block;">
                     </span><span class="text">用DTcms做一个独立博客网站（响应式模板）</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
                         2016-11-01
                     </span><span class="muted"><i class="glyphicon glyphicon-eye-open"></i>88</span></a></li>
                     <li><a title="用DTcms做一个独立博客网站（响应式模板）" href="#" ><span class="thumbnail">
-                        <img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776.jpg" alt="用DTcms做一个独立博客网站（响应式模板）"  style="display: block;">
+                        <img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776ed.jpg" alt="用DTcms做一个独立博客网站（响应式模板）" style="display: block;">
                     </span><span class="text">用DTcms做一个独立博客网站（响应式模板）</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
                         2016-11-01
                     </span><span class="muted"><i class="glyphicon glyphicon-eye-open"></i>88</span></a></li>
                     <li><a title="用DTcms做一个独立博客网站（响应式模板）" href="#" ><span class="thumbnail">
-                        <img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776.jpg" alt="用DTcms做一个独立博客网站（响应式模板）"  style="display: block;">
+                        <img class="thumb" data-original="../assets/images/201610181739277776.jpg" src="../assets/images/201610181739277776ed.jpg" alt="用DTcms做一个独立博客网站（响应式模板）" style="display: block;">
                     </span><span class="text">用DTcms做一个独立博客网站（响应式模板）</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
                         2016-11-01
                     </span><span class="muted"><i class="glyphicon glyphicon-eye-open"></i>88</span></a></li>
-        
+
               </ul>
          </div>
-         <div class="widget widget_sentence">    
+         <div class="widget widget_sentence">
             <a href="#" target="_blank" rel="nofollow" title="专业网站建设" >
-            <img style="width: 100%" src="../assets/images//201610241224221511.jpg" alt="专业网站建设" ></a>    
+            <img style="width: 100%" src="../assets/images//201610241224221511.jpg" alt="专业网站建设" ></a>
          </div>
-         <div class="widget widget_sentence">    
+         <div class="widget widget_sentence">
             <a href="#" target="_blank" rel="nofollow" title="MZ-NetBlog主题" >
-            <img style="width: 100%" src="../assets/images/ad.jpg" alt="MZ-NetBlog主题" ></a>    
+            <img style="width: 100%" src="../assets/images/ad.jpg" alt="MZ-NetBlog主题" ></a>
          </div>
         <div class="widget widget_sentence">
           <h3>友情链接</h3>
@@ -225,7 +225,7 @@
 @import "../assets/css/font-awesome.min.css";
 
 @import "../assets/nav_files/mycolor.css";
-@import "../assets/plugins/bootstrap/css/bootstrap.min.css";   
+@import "../assets/plugins/bootstrap/css/bootstrap.min.css";
 @import "../assets/plugins/font-awesome/css/font-awesome.css";
 @import "../assets/css/styles.css";
 

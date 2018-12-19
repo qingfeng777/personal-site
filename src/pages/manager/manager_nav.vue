@@ -1,7 +1,7 @@
 <template>
 
   <div class="index">
-        
+
       <div class="user-select">
       <header class="header">
               <nav class="navbar navbar-default" id="navbar">
@@ -26,12 +26,12 @@
                     </li>
                     <li>
                         <router-link to="/manager/edit">
-                          edit      
+                          edit
                         </router-link>
                     </li>
                     <li>
                         <router-link to="/manager/tag">
-                          tag        
+                          tag
                         </router-link>
                     </li>
                   </ul>
@@ -39,7 +39,7 @@
               </div>
               </nav>
               </header>
-              
+
               <router-view />
 
               <footer class="footer">
@@ -77,7 +77,7 @@
 @import "../../assets/css/font-awesome.min.css";
 
 @import "../../assets/nav_files/mycolor.css";
-@import "../../assets/plugins/bootstrap/css/bootstrap.min.css";   
+@import "../../assets/plugins/bootstrap/css/bootstrap.min.css";
 @import "../../assets/plugins/font-awesome/css/font-awesome.css";
 @import "../../assets/css/styles.css";
 

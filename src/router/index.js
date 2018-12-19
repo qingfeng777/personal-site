@@ -62,13 +62,14 @@ export default new Router({
           ]
         },
         // not herer
-        { 
+        {
           path:"/manager",
           component:managerNav,
           redirect:'/manager/home',
           children:[
             {
               path:'/manager/edit',
+              name:'edit',
               component:edit
             },
             {
