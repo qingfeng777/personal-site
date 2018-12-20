@@ -74,6 +74,7 @@ export default new Router({
             },
             {
               path:'/manager/home',
+              name: 'manager',
               component:manager
             },
             {
