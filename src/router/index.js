@@ -45,6 +45,7 @@ export default new Router({
             },
             {
               path:"/blog/detail",
+              name: 'detail',
               component:detail
             },
             {

@@ -5,12 +5,14 @@
         <div class="content">
           <header class="article-header">
             <div class="input-group title">
-              <input type="text" class="form-control titleIn" placeholder="标题" v-model="article.title">
+              <h2>
+                <input type="text" class="form-control titleIn" placeholder="标题" v-model="article.title">
+              </h2>
             </div>
           </header>
           <article class="article-content">
             <div id="main">
-              <mavon-editor v-model="article.content" editable=false />
+              <mavon-editor id="editor" :subfield=false  v-model="article.content" />
             </div>
           </article>
 
@@ -34,26 +36,34 @@
           <div class="row">
             <div class="col-lg-6">
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="分类" aria-label="..." v-model="article.category">
+                <input type="text" class="form-control floatLeft" placeholder="分类" aria-label="..." v-model="article.category">
                 <div class="input-group-btn">
-                  <button type="button" class="btn btn-primary btn-lg selectBtn" data-toggle="dropdown"
+                  <button type="button" class="btn btn-primary btn-lg selectBtn floatLeft" data-toggle="dropdown"
                           aria-haspopup="true" aria-expanded="false">可选项
                   </button>
                   <ul class="dropdown-menu" v-model="article.category">
                     <li v-for="(cate,index) in categorys" @click="selectCate(cate)">{{cate.name}}</li>
                   </ul>
                 </div><!-- /btn-group -->
+                <button type="button" @click="submit" class="btn btn-primary btn-lg floatRight" style="margin-right: -800%">提交</button>
               </div><!-- /input-group -->
             </div><!-- /.col-lg-6 -->
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button type="button" @click="submit" class="btn btn-primary btn-lg">提交</button>
           </div><!-- /.row -->
           </p>
 
-          <div id="postcomments">
+
+          <!--提示框-->
+          <div v-show="showError" class="alert alert-danger alert-dismissible" style="margin-top: 20px" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>错误!</strong> {{tipMessage}}
+          </div>
+          <div v-show="showSuccess" class="alert alert-success"  style="margin-top: 20px" role="alert">{{tipMessage}}</div>
+
+
+          <div id="postcomments" class="bootTip">
             <ol id="comment_list" class="commentlist">
               <li class="comment-content"><span class="comment-f"></span>
-                <div class="comment-main"><p><a class="address" href="#" rel="nofollow" target="_blank">何妨吟啸且徐行</a>
+                <div class="comment-main"><p><a class="address"  rel="nofollow" target="_blank">何妨吟啸且徐行</a>
 
                   <br>谁怕，一骑战马任平生！</p></div>
               </li>
@@ -122,10 +132,6 @@
         </div>
 
         <div class="widget widget_sentence">
-
-          <!-- <a href="#" target="_blank" rel="nofollow" title="专业" > 广告
-              <img style="width: 100%" src="../../assets/images/201610241224221511.jpg" alt="专业写bug" ></a> -->
-
         </div>
       </aside>
     </section>
@@ -134,6 +140,7 @@
 
 </template>
 
+<!--
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/nprogress.js"></script>
 <script src="js/jquery.lazyload.min.js"></script>
@@ -152,13 +159,19 @@
   }, "share": {}
 };
 with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=0.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+-->
 
 <script>
   import fetcharticle from '../../fetch/article'
   import fetchcategory from '../../fetch/category'
+  import { mavonEditor } from 'mavon-editor'
+  import 'mavon-editor/dist/css/index.css'
   import {mapActions} from 'vuex'
 
   export default {
+    components: {
+      'mavon-editor': mavonEditor
+    },
     mixins: [10],
     data() {
       return {
@@ -173,29 +186,17 @@ with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createEl
           {name: '获取失败'}
         ],
         tags: '',
-        edit: false
+        edit: false,
+        showError: false,
+        showSuccess: false,
+        tipMessage: ""
       }
     },
     methods: {
       ...mapActions('article', [
         'getList' // 获取数据
       ]),
-      // ---邮件服务器信息获取--- //
-      'open': function () {
-        debugger
-        fetchMailServer._getMailServer()
-          .then(res => {
-            if (res.data === '') {
-              this.formCustom.sendEmail = 'article.emailUnset'
-            } else {
-              this.formCustom.sendEmail = res.data.from
-            }
-            this.saveButton = false
-          })
-          .catch((error) => {
-            console.log(error.response.data.message)
-          })
-      },
+
       'submit': function () {
         if (this.tags === '') {
           alert('tag 还没填')
@@ -208,52 +209,39 @@ with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createEl
         if (this.edit) {
           fetcharticle._edit(this.article)
             .then(res => {
-              //this.getList()
-              //modal.close()
-              alert(name + 'base.create' + 'base.success')
+              this.showSuccess = true
+              this.tipMessage = "操作成功"
+              this.toHome()
             })
             .catch((error) => {
-              if (error.response.data.code === 500) {
-                alert(name + 'base.create' + 'base.fail')
-              } else {
-                alert(error.response.data.message)
-              }
+              this.showError = true
+              this.tipMessage = error.msg
+              return
             })
-          this.$router.push({name:'manager'})
           return
         }
 
         // 添加
         fetcharticle._create(this.article)
           .then(res => {
-            //this.getList()
-            //modal.close()
-            alert(name + 'base.create' + 'base.success')
+            this.showSuccess = true
+            this.tipMessage = "操作成功"
+            this.toHome() //this.$router.push({name:'manager'})
           })
           .catch((error) => {
-            if (error.response.data.code === 500) {
-              alert(name + 'base.create' + 'base.fail')
-            } else {
-              alert(error.response.data.message)
-            }
-            //modal.close()
+            this.showError = true
+            this.tipMessage = error.msg
+            return
           })
-
-        this.$router.push({name:'manager'})
       },
+
       'selectCate': function (cate) {
         this.article.category = cate.name
       },
-      // 测试webhook url格式按钮，格式错误也可保存
-      webhookTest() {
-        fetcharticle._webhookTest(this.formCustom.recUrl)
-          .then(res => {
-            this.$Message.success('article.urlRight')
-          })
-          .catch((error) => {
-            console.log(error.msg)
-            alert('article.urlWrong')
-          })
+      'toHome': function () {
+        setTimeout(() => {
+          this.$router.push({name:'manager'})
+        }, 1300)
       }
     },
     mounted() {
@@ -266,21 +254,17 @@ with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createEl
       fetchcategory._getList()
         .then(res => {
           this.categorys = res.data
-          // alert(res.msg)
         })
         .catch((error) => {
-          if (error.response.data.code === 500) {
-            alert(name + 'base.create' + 'base.fail')
-          } else {
-            alert(error.response.data.message)
-          }
-          //modal.close()
+          this.showError = true
+          this.tipMessage = error.msg
+          return
         })
     },
   }
 </script>
 
-<style>
+<style scoped>
   @import "../../assets/css/nprogress.css";
   @import "../../assets/css/font-awesome.min.css";
   @import "../../assets/nav_files/mycolor.css";
@@ -292,6 +276,19 @@ with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createEl
     margin-left: 15%;
     width: 65%;
   }
+  .floatLeft{
+    float: left;
+  }
+  .floatRight{
+    float: right;
+  }
+
+  #editor{
+    margin: auto;
+    width: 100%;
+    height: 380px;
+    background-color: #F7F7F7;
+  }
 
   .titleIn {
     border-style: solid;
@@ -300,11 +297,16 @@ with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createEl
     border-bottom-width: 1px;
     border-left-width: 0px;
     text-align: center;
+    height: 60px;
+    font-size: larger;
   }
 
   .col-lg-6 {
     width: 35%;
-    margin-left: 10%;
+    margin-left: 0%;
+  }
+  .bootTip{
+    padding-top: 60px;
   }
 
   .selectBtn {

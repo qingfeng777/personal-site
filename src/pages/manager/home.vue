@@ -10,7 +10,7 @@
             </ol>
             <div class="carousel-inner" role="listbox">
               <div class="item active">
-                <a href="#" target="_blank" title="木庄网络博客源码">
+                <a target="_blank" title="木庄网络博客源码">
                   <img
                     src="../../assets/images//201610181557196870.jpg"
                     alt="木庄网络博客源码"
@@ -19,7 +19,7 @@
                 </a>
               </div>
               <div class="item">
-                <a href="#" target="_blank" title="专业网站建设">
+                <a target="_blank" title="专业网站建设">
                   <img
                     src="../../assets/images//201610241227558789.jpg"
                     alt="专业网站建设"
@@ -53,46 +53,49 @@
           <div class="title">
             <h3>列表</h3>
             <div class="more">
-              <a href="#" title="积极">积极</a>
-              <a href="#" title="高效">高效</a>
-              <a href="#" title="乐观">乐观</a>
-              <a href="#" title="善思">善思</a>
-              <a href="#" title="实践">实践</a>
+              <a title="积极">积极</a>
+              <a title="高效">高效</a>
+              <a title="乐观">乐观</a>
+              <a title="善思">创新</a>
+              <a title="实践">实践</a>
             </div>
           </div>
 
-          <article class="excerpt excerpt-4 article" v-for="article in listData" style>
-            <a class="focus" href="#" title="article.title" target="_blank">
-              <router-link :to="{name:'edit',path:'/manager/edit',params:{art:article}}">
-                <img
-                  class="articleImg"
-                  data-original="../../assets/images/201610181739277776.jpg"
-                  src="../../assets/images/201610181739277776ed.jpg"
-                  alt="啊哈哈哈"
-                >
-              </router-link>
-            </a>
-            <header>
-              <a class="cat" href="#" title="MZ-NetBlog主题">MZ-NetBlog主题
-                <i></i>
+          <div v-for="article in listData">
+            <br/>
+            <article class="excerpt excerpt-4 article" style>
+              <a class="focus" title="article.title" target="_blank">
+                <router-link :to="{name:'edit',path:'/manager/edit',params:{art:article}}">
+                  <img
+                    class="articleImg"
+                    data-original="../../assets/images/201610181739277776.jpg"
+                    src="../../assets/images/201610181739277776ed.jpg"
+                    alt="素青"
+                  >
+                </router-link>
               </a>
-              <h2>
-                <a href="#" title="article.keyword" target="_blank">{{article.title}}</a>
-              </h2>
-            </header>
-            <p class="meta">
-              <time class="time">
-                <i class="glyphicon glyphicon-time"></i> 2016-10-16
-              </time>
-              <span class="views">
-                <i class="glyphicon glyphicon-eye-open"></i> 216
-              </span>
-              <a class="comment" href="##comment" title="评论" target="_blank">
-                <i class="glyphicon glyphicon-comment"></i> 6
-              </a>
-            </p>
-            <p class="note">{{article.content}}</p>
-          </article>
+              <header>
+                <a class="cat" title="标签">{{tags(article.tag)}}
+                  <i></i>
+                </a>
+                <h2>
+                  <a title="标题" target="_blank">{{article.title}}</a>
+                </h2>
+              </header>
+              <p class="meta">
+                <time class="time">
+                  <i class="glyphicon glyphicon-time"></i> {{timestampToTime(article.createAt)}}
+                </time>
+                <span class="views">
+                  <i class="glyphicon glyphicon-eye-open"></i> {{article.counter.view}}
+                </span>
+                <span class="views">
+                  <i class="glyphicon glyphicon-comment"></i> {{article.counter.comment}}
+                </span>
+              </p>
+              <p class="note">{{article.keyWord}}</p>
+            </article>
+          </div>
           <nav class="pagination" style="display: none;">
             <ul>
               <li class="prev-page"></li>
@@ -153,7 +156,7 @@
                 <h2>
                   Email:
                   <a
-                    href="#"
+
                     target="_blank"
                     data-toggle="tooltip"
                     rel="nofollow"
@@ -188,7 +191,7 @@
           <h3>最新评论文章</h3>
           <ul>
             <li>
-              <a title="用DTcms做一个独立博客网站（响应式模板）" href="#">
+              <a title="用DTcms做一个独立博客网站（响应式模板）">
                 <span class="thumbnail">
                   <img
                     class="thumb"
@@ -209,7 +212,7 @@
               </a>
             </li>
             <li>
-              <a title="用DTcms做一个独立博客网站（响应式模板）" href="#">
+              <a title="用DTcms做一个独立博客网站（响应式模板）">
                 <span class="thumbnail">
                   <img
                     class="thumb"
@@ -232,14 +235,14 @@
           </ul>
         </div>
         <div class="widget widget_sentence">
-          <a href="#" target="_blank" rel="nofollow" title="MZ-NetBlog主题">
+          <a target="_blank" rel="nofollow" title="MZ-NetBlog主题">
             <img style="width: 100%" src="../../assets/images/ad.jpg" alt="MZ-NetBlog主题">
           </a>
         </div>
         <div class="widget widget_sentence">
           <h3>友情链接</h3>
           <div class="widget-sentence-link">
-            <a href="#" title="网站建设" target="_blank">网站建设</a>&nbsp;&nbsp;&nbsp;
+            <a title="网站建设" target="_blank">网站建设</a>&nbsp;&nbsp;&nbsp;
           </div>
         </div>
       </aside>
@@ -247,6 +250,7 @@
   </div>
 </template>
 
+<!--
 
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.ias.js"></script>
@@ -254,10 +258,12 @@
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/nprogress.js"></script>
 <script src="js/jquery.lazyload.min.js"></script>
+-->
 
 <script>
   // app预设置
   import {mapState, mapGetters, mapActions} from "vuex";
+  import timeTool from '../../utils/time'
 
   export default {
     name: "managerIndex",
@@ -284,75 +290,18 @@
         "listLoading", // 主列表loading状态
         "listPageNum" // 主列表页码
       ]),
-      ...mapGetters("base", ["paasCheck"]),
-      // 列表定义
-      tableColumns() {
-        const columns = [];
-        columns.push({
-          type: "selection",
-          width: 60,
-          align: "center"
-        });
-        columns.push({
-          title: "base.name",
-          key: "name",
-          sortable: false,
-          render: (h, params) => {
-            const name = params.row.name;
-            const id = params.row.id;
-            return h(
-              "router-link",
-              {
-                props: {
-                  to: {
-                    name: "article_detail",
-                    params: {id: id}
-                  }
-                }
-              },
-              name
-            );
-          }
-        });
-        columns.push({
-          title: "base.type",
-          key: "type",
-          sortable: false
-        });
-        columns.push({
-          title: "article.goal",
-          key: "val"
-        });
-        columns.push({
-          title: "base.createAt",
-          key: "addDate",
-          render: (h, params) => {
-            const moment = this.$options.filters["moment"];
-            const date = moment(params.row.addDate);
-            return h("span", date);
-          }
-        });
-        return columns;
-      }
+      ...mapGetters("base", ["paasCheck"])
     },
     methods: {
       ...mapActions("article", [
         "getList", // 获取数据
         "listChangePage" // 翻页
       ]),
-      actionEdit() {
-        this.modalEdit = this.singleSelected;
+      'tags': function (tag) {
+        return tag.join(",")
       },
-      actionDelete() {
-        this.modalDelete = this.selected;
-      },
-      getSearchVal() {
-        if (this.searchVal === "") {
-          this.getList();
-        } else {
-          this.searchKey = "name";
-          this.actionSearch();
-        }
+      'timestampToTime': function (stamp) {
+        return timeTool.timestampToTime(stamp)
       }
     },
     created() {
@@ -366,7 +315,7 @@
 </script>
 
 
-<style>
+<style scoped>
   @import "../../assets/css/nprogress.css";
   @import "../../assets/css/font-awesome.min.css";
   @import "../../assets/nav_files/mycolor.css";
@@ -378,7 +327,7 @@
     height: 150px;
   }
 
-  .articleImg{
+  .articleImg {
     border-radius: 5px;
     width: 220px;
     height: 130px;

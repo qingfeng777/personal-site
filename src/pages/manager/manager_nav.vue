@@ -44,7 +44,11 @@
 
               <footer class="footer">
               <div class="container">
-              <p>Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+              <p>2000年来 人类的天生能力已经停止了进化 ！
+                <a href="http://www.cssmoban.com/" target="_blank" title="传承">使科技文明进步的</a>
+                是不断的探索
+                <a href="" title="和传承" target="_blank">传承</a></p>
+                <br/>惊不惊喜，意不意外！
               </div>
               <div id="gotop"><a class="gotop"></a></div>
               </footer>
