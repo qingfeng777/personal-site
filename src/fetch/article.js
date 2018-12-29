@@ -1,8 +1,8 @@
 import { api, fetch } from './common'
 
 // 获取列表
-const _getList = function (limit, offset, searchKey) {
-  return fetch(api.paas + '/article', 'get')
+const _getList = function (limit, page) {
+  return fetch(api.paas + '/article/' + limit + "/" + page, 'get')
 }
 // 创建新
 const _create = function (data) {
@@ -29,13 +29,20 @@ const _articleCheck = function (id) {
   return fetch(api.paas + '/article_check', 'post', id)
 }
 
+const _getArticle = function (limit, page, searchKey) {
+  return fetch(api.paas + '/article/search', 'get', {}, {
+    'key': searchKey,
+    'limit': limit,
+    'page': page
+  })
+}
+
 // 输出业务请求方法，规范为vuex模块内引入
 export default {
+  _getArticle,
   _getList,
   _create,
   _edit,
   _delete,
-  _getItem,
-  _webhookTest,
-  _articleCheck
+  _getItem
 }

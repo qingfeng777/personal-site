@@ -96,23 +96,33 @@
               <p class="note">{{article.keyWord}}</p>
             </article>
           </div>
-          <nav class="pagination" style="display: none;">
+
+          <br/><br/><br/>
+          <!--<nav class="pagination" style="display: inline;">
             <ul>
-              <li class="prev-page"></li>
-              <li class="active">
-                <span>1</span>
+              <li class="prev-page disabled">
+                <a>上一页</a>
+              </li>
+
+              <li class="active"  v-for="page in pages.pageShow">
+                <span>{{page}}</span>
               </li>
               <li>
-                <a href="?page=2">2</a>
+                <a href="?page=2">24</a>
               </li>
               <li class="next-page">
                 <a href="?page=2">下一页</a>
               </li>
               <li>
-                <span>共 2 页</span>
+                <span>共 {{parseInt(pages.total/pages.pageSize) + 1}} 页</span>
               </li>
             </ul>
-          </nav>
+          </nav>-->
+
+          <template>
+            <Page :total="total" :pageSize="limit" :current="listPageNum" @on-change="getList" />
+          </template>
+
         </div>
       </div>
       <div class="tlinks">Collect from
@@ -126,18 +136,18 @@
                 <a href="#notice" aria-controls="notice" role="tab" data-toggle="tab">统计信息</a>
               </li>
               <li role="presentation">
-                <a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">联系站长</a>
+                <a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">联系我</a>
               </li>
             </ul>
             <div class="tab-content">
               <div role="tabpanel" class="tab-pane contact active" id="notice">
                 <h2>
                   日志总数:
-                  888篇
+                  88篇
                 </h2>
                 <h2>
                   网站运行:
-                  <span id="sitetime">88天</span>
+                  <span id="sitetime">66天</span>
                 </h2>
               </div>
               <div role="tabpanel" class="tab-pane contact" id="contact">
@@ -169,7 +179,6 @@
             </div>
           </div>
           <div class="widget widget_search">
-            <form class="navbar-form" action="/Search" method="post">
               <div class="input-group">
                 <input
                   type="text"
@@ -179,12 +188,12 @@
                   placeholder="请输入关键字"
                   maxlength="15"
                   autocomplete="off"
+                  v-model="searchKey"
                 >
                 <span class="input-group-btn">
-                  <button class="btn btn-default btn-search" name="search" type="submit">搜索</button>
+                  <button class="btn btn-default btn-search" @click="searchArticle" name="search" >搜索</button>
                 </span>
               </div>
-            </form>
           </div>
         </div>
         <div class="widget widget_hot">
@@ -242,7 +251,7 @@
         <div class="widget widget_sentence">
           <h3>友情链接</h3>
           <div class="widget-sentence-link">
-            <a title="网站建设" target="_blank">网站建设</a>&nbsp;&nbsp;&nbsp;
+            <a title="网站建设" target="_blank">网站建设</a>
           </div>
         </div>
       </aside>
@@ -262,39 +271,36 @@
 
 <script>
   // app预设置
-  import {mapState, mapGetters, mapActions} from "vuex";
-  import timeTool from '../../utils/time'
-
   export default {
     name: "managerIndex",
     components: {},
     data() {
       return {
-        // 列表是否分页
-        paging: true,
-        // 面包屑 name:名称 trans:是否需要翻译
-        breadcrumbData: [{name: "article", trans: true}],
-        // 头部横排nav导航 name:名称 link:路由链接name
-        navList: [{name: "base.article", link: "article"}],
         // searchKey可选项目列表 （搜索无种类选择功能可删除此变量）
         // val为列表值
         // name为显示名
-        searchKeyList: [{val: "id", name: "name"}],
-        pageSize: 0, // string类型，列表每页记录数
-        total: 0 // Number类型，列表的长度
+        searchKey: "",
+//        pages:{
+//          pageSize: 5, // string类型，列表每页记录数
+//          total: 23, // Number类型，列表的长度
+//          pageShow:[1,2]
+//        }
       };
     },
     computed: {
       ...mapState("article", [
         "listData", // 主列表数据
         "listLoading", // 主列表loading状态
-        "listPageNum" // 主列表页码
+        "listPageNum", // 主列表页码
+        "limit",
+        "total"
       ]),
       ...mapGetters("base", ["paasCheck"])
     },
     methods: {
       ...mapActions("article", [
         "getList", // 获取数据
+        "getArticle",
         "listChangePage" // 翻页
       ]),
       'tags': function (tag) {
@@ -302,14 +308,19 @@
       },
       'timestampToTime': function (stamp) {
         return timeTool.timestampToTime(stamp)
+      },
+      'searchArticle': function () {
+        this.getArticle(this.searchKey)
       }
     },
-    created() {
-      this.pageSize = 14;
-      this.getList();
-      console.log("data: ", this.listdata);
+    mounted() {
+      this.getList(1);
     }
+
   };
+  import {mapState, mapGetters, mapActions} from "vuex";
+
+  import timeTool from '../../utils/time'
   //<link rel="apple-touch-icon-precomposed" href="../../assets/images/icon.png">
   //<link rel="shortcut icon" href="../../assets/images/favicon.ico">
 </script>

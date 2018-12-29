@@ -6,7 +6,10 @@ import router from './router'
 import store from './store/store'
 import mavonEditor from 'mavon-editor'
 import 'mavon-editor/dist/css/index.css'
-// use
+import iView from 'iview';
+import 'iview/dist/styles/iview.css';
+
+Vue.use(iView);
 Vue.use(mavonEditor)
 
 Vue.config.productionTip = false

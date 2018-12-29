@@ -6,8 +6,11 @@ import article from '../../../fetch/article'
 const state = {
   listData: [], // 主列表数据
   listPageNum: 1, // 主列表页码
+  searchKey: "",
+  limit: 5,
   listLoading: false, // 主列表载入状态
-  itemData: {} // 当前详情数据
+  itemData: {}, // 当前详情数据
+  total: 0,
 }
 // getters
 const getters = {
@@ -28,13 +31,13 @@ const actions = {
   getList({
     commit,
     state
-  }, searchKey) {
+  }, page) {
     commit(types.SET_LIST_LOADING, true)
-    const limit = 10 //parseInt(Cookies.get('page-size'))
-    const offset = (state.listPageNum - 1) * limit
-    article._getList(limit, offset, searchKey)
+    commit(types.LIST_CHANGE_PAGE, page)
+    article._getArticle(state.limit, state.listPageNum, state.searchKey)
       .then(res => {
         commit(types.SET_LIST_DATA, res['data'])
+        commit(types.SET_TOTAL, res['total'])
         commit(types.SET_LIST_LOADING, false)
       })
       .catch((error) => {
@@ -60,12 +63,22 @@ const actions = {
     }
   },
   // 更改页码
-  listChangePage({
+  getArticle({
     dispatch,
     commit,
     state
-  }, num) {
-    commit(types.LIST_CHANGE_PAGE, num)
+  }, key) {
+    commit(types.SET_KEY, key)
+    article._getArticle(state.limit, state.listPageNum, key)
+      .then(res => {
+        commit(types.SET_LIST_DATA, res['data'])
+        commit(types.SET_TOTAL, res['total'])
+        commit(types.SET_LIST_LOADING, false)
+      })
+      .catch((error) => {
+        console.log(error.response.data)
+        commit(types.SET_LIST_LOADING, false)
+      })
   }
 }
 
@@ -82,6 +95,12 @@ const mutations = {
   },
   [types.LIST_CHANGE_PAGE](state, savedata) {
     state.listPageNum = savedata
+  },
+  [types.SET_TOTAL](state, savedata) {
+    state.total = savedata
+  },
+  [types.SET_KEY](state, savedata) {
+    state.searchKey = savedata
   }
 }
 
