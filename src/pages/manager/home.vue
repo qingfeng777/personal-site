@@ -243,11 +243,11 @@
             </li>
           </ul>
         </div>
-        <div class="widget widget_sentence">
+<!--        <div class="widget widget_sentence">
           <a target="_blank" rel="nofollow" title="MZ-NetBlog主题">
             <img style="width: 100%" src="../../assets/images/ad.jpg" alt="MZ-NetBlog主题">
           </a>
-        </div>
+        </div>-->
         <div class="widget widget_sentence">
           <h3>友情链接</h3>
           <div class="widget-sentence-link">

@@ -77,26 +77,26 @@
           <div class="widget widget-tabs">
             <ul class="nav nav-tabs" role="tablist">
               <li role="presentation" class="active"><a href="#notice" aria-controls="notice" role="tab"
-                                                        data-toggle="tab" draggable="false">这是1</a></li>
+                                                        data-toggle="tab" draggable="false">宽容待人</a></li>
               <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab"
-                                         draggable="false">这是2</a></li>
+                                         draggable="false">莫过认真</a></li>
             </ul>
             <div class="tab-content">
               <div role="tabpanel" class="tab-pane contact active" id="notice">
                 <h2>
-                  write something
+                  说写演，输出亦非学习终点
                 </h2>
-                <h2>say to
-                  <span id="sitetime">self </span></h2>
+                <h2>爱恨静，
+                  <span id="sitetime">皆指所想 </span></h2>
               </div>
               <div role="tabpanel" class="tab-pane contact" id="contact">
-                <h2>QQ:
+                <h2>小事偶过计较
                   <a href="" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="bottom" title=""
-                     draggable="false" data-original-title="QQ:577211782">577211782</a>
+                     draggable="false" data-original-title="哈哈">略有小气</a>
                 </h2>
-                <h2>Email:
+                <h2>执行不足
                   <a href="mailto:577211782@qq.com" target="_blank" data-toggle="tooltip" rel="nofollow"
-                     data-placement="bottom" title="" draggable="false" data-original-title="Email:577211782@qq.com">577211782@qq.com</a>
+                     data-placement="bottom" title="" draggable="false" data-original-title="Email:577211782@qq.com">复习不足</a>
                 </h2>
               </div>
             </div>
@@ -113,18 +113,19 @@
           </div>
         </div>
         <div class="widget widget_hot">
-          <h3>记得多清？你有多想？</h3>
+          <h3>时光飞逝，年有多长？</h3>
+          <h3>除恶习，积善习</h3>
           <ul>
 
             <li><a title="要坐直" href="#"><span class="thumbnail">
-            <img class="thumb" src="../../assets/images/201610181739277776ed.jpg" alt="用傻笑世界" style="display: block;">
-            </span><span class="text">坐直身体好</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
+            <img class="thumb" src="../../assets/images/rhinoceros.gif" alt="用傻笑世界" style="display: block;">
+            </span><span class="text">坐直凝气神</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
             2016-11-01
             </span><span class="muted"><i class="glyphicon glyphicon-eye-open"></i>88</span></a></li>
             <li><a title="多活动" href="#"><span class="thumbnail">
             <img class="thumb" data-original="../../assets/images/201610181739277776.jpg"
                  src="../../assets/images/201610181739277776ed.jpg" alt="以柔布棋局" style="display: block;">
-            </span><span class="text">身体是革命的本钱</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
+            </span><span class="text">锻身为基础</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
             2016-11-01
             </span><span class="muted"><i class="glyphicon glyphicon-eye-open"></i>88</span></a></li>
 
