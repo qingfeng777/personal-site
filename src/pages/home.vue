@@ -53,7 +53,19 @@
           <article class="excerpt-minic excerpt-minic-index">
             <h2><span class="red">【推荐】</span><a target="_blank" href="#" title="标题" >标题</a>
             </h2>
-            <p class="note">用DTcms做一个独立博客网站（响应式模板），采用DTcms V4.0正式版（MSSQL）。开发环境：SQL2008R2+VS2010。DTcms V4.0正式版功能修复和优化：1、favicon.ico图标后台上传。（解决要换图标时要连FTP或者开服务器的麻烦）</p>
+            <p class="note">1, 围绕 简单 这一核心的设计
+              隐式接口,切片,
+              类的弱化,强制用组合
+              简洁高效的并发
+              弱化的指针
+              err 判定,先判错的习俗.
+
+              2, 有自己的坚持,不盲目攀比
+              比优点比不过很多语言,没C快,没java灵活,赶不上python 实现简单. 但是也没有大的缺点.
+              优点多.上手快,多线程方便,slice,channel 方便,格式严谨. 从而简单实用. 这就奠定了其流行的基础.
+
+              3,keep it simple
+              追求简单实用的哲学,从语言的层面上减少代码的复杂度 ------------- 直指 程序管理的终极目标,管理复杂度</p>
           </article>
           <br/> <br/>
           <div class="title">

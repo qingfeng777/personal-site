@@ -26,12 +26,12 @@
                     </li>
                     <li>
                         <router-link to="/manager/edit">
-                          edit
+                          添加
                         </router-link>
                     </li>
                     <li>
                         <router-link to="/manager/tag">
-                          tag
+                          标签
                         </router-link>
                     </li>
                   </ul>

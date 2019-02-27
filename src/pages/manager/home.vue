@@ -199,48 +199,19 @@
         <div class="widget widget_hot">
           <h3>最新评论文章</h3>
           <ul>
-            <li>
-              <a title="用DTcms做一个独立博客网站（响应式模板）">
-                <span class="thumbnail">
-                  <img
-                    class="thumb"
-                    data-original="../../assets/images/201610181739277776.jpg"
-                    src="../../assets/images/201610181739277776ed.jpg"
-                    alt="用DTcms做一个独立博客网站（响应式模板）"
-                    style="display: block;"
-                  >
-                </span>
-                <span class="text">用DTcms做一个独立博客网站（响应式模板）</span>
-                <span class="muted">
-                  <i class="glyphicon glyphicon-time"></i>
-                  2016-11-01
-                </span>
-                <span class="muted">
-                  <i class="glyphicon glyphicon-eye-open"></i>88
-                </span>
-              </a>
-            </li>
-            <li>
-              <a title="用DTcms做一个独立博客网站（响应式模板）">
-                <span class="thumbnail">
-                  <img
-                    class="thumb"
-                    data-original="../../assets/images/201610181739277776.jpg"
-                    src="../../assets/images/201610181739277776ed.jpg"
-                    alt="用DTcms做一个独立博客网站（响应式模板）"
-                    style="display: block;"
-                  >
-                </span>
-                <span class="text">用DTcms做一个独立博客网站（响应式模板）</span>
-                <span class="muted">
-                  <i class="glyphicon glyphicon-time"></i>
-                  2016-11-01
-                </span>
-                <span class="muted">
-                  <i class="glyphicon glyphicon-eye-open"></i>88
-                </span>
-              </a>
-            </li>
+
+            <li><a title="要坐直" href="#"><span class="thumbnail">
+            <img class="thumb" src="../../assets/images/rhinoceros.gif" alt="用傻笑世界" style="display: block;">
+            </span><span class="text">坐直凝气神</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
+            2016-11-01
+            </span><span class="muted"><i class="glyphicon glyphicon-eye-open"></i>88</span></a></li>
+            <li><a title="多活动" href="#"><span class="thumbnail">
+            <img class="thumb" data-original="../../assets/images/201610181739277776.jpg"
+                 src="../../assets/images/201610181739277776ed.jpg" alt="以柔布棋局" style="display: block;">
+            </span><span class="text">锻身为基础</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
+            2016-11-01
+            </span><span class="muted"><i class="glyphicon glyphicon-eye-open"></i>88</span></a></li>
+
           </ul>
         </div>
 <!--        <div class="widget widget_sentence">

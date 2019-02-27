@@ -35,29 +35,26 @@
                           </li>
                           <li>
                                 <router-link to="/blog/detail">
-                                    详情/最新？
+                                    心情
                                   </router-link>
                           </li>
                           <li>
                                 <router-link to="/blog/all">
-                                    　　所有博客
+                                    　　感想
                                 </router-link>
 
                           </li>
-                          <li>
-                                <router-link to="/blog/message_board">
-                                    message board
-                                </router-link>
-                          </li>
 
-
-
-
-                          <li><a data-cont="MZ-NetBolg主题" title="MZ-NetBolg主题" href="#" >MZ-NetBolg主题</a></li>
                           <li><a data-cont="IT技术笔记" title="IT技术笔记" href="#" >IT技术笔记</a></li>
                           <li><a data-cont="源码分享" title="源码分享" href="#" >源码分享</a></li>
-                          <li><a data-cont="靠谱网赚" title="靠谱网赚" href="#" >靠谱网赚</a></li>
-                          <li><a data-cont="资讯分享" title="资讯分享" href="#" >资讯分享</a></li>
+
+                          <li>
+                                <router-link to="/blog/message_board">
+                                    留言板
+                                </router-link>
+                          </li>
+
+
                         </ul>
                       </div>
                     </div>
