@@ -6,31 +6,23 @@
         <div class="content-wrap">
         <div class="content">
           <header class="article-header">
-            <h1 class="article-title"><a href="#" title="用DTcms做一个独立博客网站（响应式模板）" >用DTcms做一个独立博客网站（响应式模板）</a></h1>
+            <h1 class="article-title"><a href="#" title="用DTcms做一个独立博客网站（响应式模板）" >{{ article.title }}</a></h1>
             <div class="article-meta"> <span class="item article-meta-time">
               <time class="time" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="发表时间：2016-10-14"><i class="glyphicon glyphicon-time"></i> 2016-10-14</time>
               </span> <span class="item article-meta-source" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="来源：木庄网络博客"><i class="glyphicon glyphicon-globe"></i> 木庄网络博客</span> <span class="item article-meta-category" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="MZ-NetBlog主题"><i class="glyphicon glyphicon-list"></i> <a href="#" title="MZ-NetBlog主题" >MZ-NetBlog主题</a></span> <span class="item article-meta-views" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="浏览量：219"><i class="glyphicon glyphicon-eye-open"></i> 219</span> <span class="item article-meta-comment" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="评论量"><i class="glyphicon glyphicon-comment"></i> 4</span> </div>
           </header>
           <article class="article-content">
             <p><img data-original="../assets/images/201610181557196870.jpg" src="../assets/images/201610181557196870.jpg" alt="" /></p>
-            <p>文章效果示例，文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字。</p>
-            <pre class="prettyprint lang-cs">代码示例：
-            public static double JieCheng(int number)
-            {
-                if (number == 0)
-                {
-                    return 0;
-                }
-        
-                //初始值必须设置为1
-                double result = 1; 
-        
-                for (int i = number; i &gt;= 1; i--)
-                {
-                    result = result*i;
-                }
-                return result;
-            }</pre>
+
+
+            <article class="article-content">
+              <div id="main">
+                <mavon-editor :editable=false :defaultOpen="preview" :toolbarsFlag=false :subfield=false  :value="article.content" />
+
+              </div>
+            </article>
+
+
             <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a></div>
         
                   
@@ -42,14 +34,8 @@
               <h3>相关推荐</h3>
             </div>
             <ul>
-              <li><a href="#" title="" >用DTcms做一个独立博客网站（响应式模板）-MZ-NetBlog主题</a></li>
-              <li><a href="#" title="" >用DTcms做一个独立博客网站（响应式模板）-MZ-NetBlog主题</a></li>
-              <li><a href="#" title="" >用DTcms做一个独立博客网站（响应式模板）-MZ-NetBlog主题</a></li>
-              <li><a href="#" title="" >用DTcms做一个独立博客网站（响应式模板）-MZ-NetBlog主题</a></li>
-              <li><a href="#" title="" >用DTcms做一个独立博客网站（响应式模板）-MZ-NetBlog主题</a></li>
-              <li><a href="#" title="" >用DTcms做一个独立博客网站（响应式模板）-MZ-NetBlog主题</a></li>
-              <li><a href="#" title="" >用DTcms做一个独立博客网站（响应式模板）-MZ-NetBlog主题</a></li>
-              <li><a href="#" title="" >用DTcms做一个独立博客网站（响应式模板）-MZ-NetBlog主题</a></li>
+              <li><a href="#" title="" >hello, 分享 视为学习的终点？</a></li>
+
             </ul>
           </div>
           <div class="title" id="comment">
@@ -123,42 +109,7 @@
         </span><span class="text">用DTcms做一个独立博客网站（响应式模板）</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
         2016-11-01
         </span><span class="muted"><i class="glyphicon glyphicon-eye-open"></i>88</span></a></li>
-        <li><a title="用DTcms做一个独立博客网站（响应式模板）" href="#" ><span class="thumbnail">
-        <img class="thumb" data-original="images/201610181739277776.jpg" src="images/201610181739277776.jpg" alt="用DTcms做一个独立博客网站（响应式模板）"  style="display: block;">
-        </span><span class="text">用DTcms做一个独立博客网站（响应式模板）</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
-        2016-11-01
-        </span><span class="muted"><i class="glyphicon glyphicon-eye-open"></i>88</span></a></li>
-        <li><a title="用DTcms做一个独立博客网站（响应式模板）" href="#" ><span class="thumbnail">
-        <img class="thumb" data-original="images/201610181739277776.jpg" src="images/201610181739277776.jpg" alt="用DTcms做一个独立博客网站（响应式模板）"  style="display: block;">
-        </span><span class="text">用DTcms做一个独立博客网站（响应式模板）</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
-        2016-11-01
-        </span><span class="muted"><i class="glyphicon glyphicon-eye-open"></i>88</span></a></li>
-        <li><a title="用DTcms做一个独立博客网站（响应式模板）" href="#" ><span class="thumbnail">
-        <img class="thumb" data-original="images/201610181739277776.jpg" src="images/201610181739277776.jpg" alt="用DTcms做一个独立博客网站（响应式模板）"  style="display: block;">
-        </span><span class="text">用DTcms做一个独立博客网站（响应式模板）</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
-        2016-11-01
-        </span><span class="muted"><i class="glyphicon glyphicon-eye-open"></i>88</span></a></li>
-        <li><a title="用DTcms做一个独立博客网站（响应式模板）" href="#" ><span class="thumbnail">
-        <img class="thumb" data-original="images/201610181739277776.jpg" src="images/201610181739277776.jpg" alt="用DTcms做一个独立博客网站（响应式模板）"  style="display: block;">
-        </span><span class="text">用DTcms做一个独立博客网站（响应式模板）</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
-        2016-11-01
-        </span><span class="muted"><i class="glyphicon glyphicon-eye-open"></i>88</span></a></li>
-        <li><a title="用DTcms做一个独立博客网站（响应式模板）" href="#" ><span class="thumbnail">
-        <img class="thumb" data-original="images/201610181739277776.jpg" src="images/201610181739277776.jpg" alt="用DTcms做一个独立博客网站（响应式模板）"  style="display: block;">
-        </span><span class="text">用DTcms做一个独立博客网站（响应式模板）</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
-        2016-11-01
-        </span><span class="muted"><i class="glyphicon glyphicon-eye-open"></i>88</span></a></li>
-        <li><a title="用DTcms做一个独立博客网站（响应式模板）" href="#" ><span class="thumbnail">
-        <img class="thumb" data-original="images/201610181739277776.jpg" src="images/201610181739277776.jpg" alt="用DTcms做一个独立博客网站（响应式模板）"  style="display: block;">
-        </span><span class="text">用DTcms做一个独立博客网站（响应式模板）</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
-        2016-11-01
-        </span><span class="muted"><i class="glyphicon glyphicon-eye-open"></i>88</span></a></li>
-        <li><a title="用DTcms做一个独立博客网站（响应式模板）" href="#" ><span class="thumbnail">
-        <img class="thumb" data-original="images/201610181739277776.jpg" src="images/201610181739277776.jpg" alt="用DTcms做一个独立博客网站（响应式模板）"  style="display: block;">
-        </span><span class="text">用DTcms做一个独立博客网站（响应式模板）</span><span class="muted"><i class="glyphicon glyphicon-time"></i>
-        2016-11-01
-        </span><span class="muted"><i class="glyphicon glyphicon-eye-open"></i>88</span></a></li>
-        
+
               </ul>
           </div>
           <div class="widget widget_sentence">
@@ -204,4 +155,109 @@
 @import "../assets/css/styles.css";
 
 </style>
+
+
+<script>
+  import fetcharticle from '../fetch/article'
+  import fetchcategory from '../fetch/category'
+  import { mavonEditor } from 'mavon-editor'
+  import 'mavon-editor/dist/css/index.css'
+  import {mapActions} from 'vuex'
+
+  export default {
+    components: {
+      'mavon-editor': mavonEditor
+    },
+    mixins: [10],
+    data() {
+      return {
+        article: {
+          title: "",
+          content: "",
+          keyWord: "",
+          tag: [],
+          category: '',
+        },
+        categorys: [
+          {name: '获取失败'}
+        ],
+        tags: '',
+        edit: false,
+        showError: false,
+        showSuccess: false,
+        tipMessage: "",
+        preview: "preview",
+      }
+    },
+    methods: {
+      ...mapActions('article', [
+        'getList' // 获取数据
+      ]),
+
+      'submit': function () {
+        if (this.tags === '') {
+          alert('tag 还没填')
+          return
+        } else {
+          this.article.tag = this.tags.split(",")
+        }
+
+        // 编辑
+        if (this.edit) {
+          fetcharticle._edit(this.article)
+            .then(res => {
+              this.showSuccess = true
+              this.tipMessage = "操作成功"
+              this.toHome()
+            })
+            .catch((error) => {
+              this.showError = true
+              this.tipMessage = error.msg
+              return
+            })
+          return
+        }
+
+        // 添加
+        fetcharticle._create(this.article)
+          .then(res => {
+            this.showSuccess = true
+            this.tipMessage = "操作成功"
+            this.toHome() //this.$router.push({name:'manager'})
+          })
+          .catch((error) => {
+            this.showError = true
+            this.tipMessage = error.msg
+            return
+          })
+      },
+
+      'selectCate': function (cate) {
+        this.article.category = cate.name
+      },
+      'toHome': function () {
+        setTimeout(() => {
+          this.$router.push({name:'manager'})
+        }, 1300)
+      }
+    },
+    mounted() {
+      if (this.$route.params.art) {
+        this.article = this.$route.params.art
+        this.tags = this.article.tag.join(",")
+        this.edit = true
+      }
+      //fetch category show in 下拉框
+      fetchcategory._getList()
+        .then(res => {
+          this.categorys = res.data
+        })
+        .catch((error) => {
+          this.showError = true
+          this.tipMessage = error.msg
+          return
+        })
+    },
+  }
+</script>
 

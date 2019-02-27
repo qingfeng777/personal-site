@@ -51,7 +51,7 @@
           </div>
           <br/> <br/> <br/>
           <div class="title">
-            <h3>列表</h3>
+            <h3>最新发布</h3>
             <div class="more">
               <a title="积极">积极</a>
               <a title="高效">高效</a>
