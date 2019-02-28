@@ -194,7 +194,7 @@
                     <div class="container top-div">
                         <div class="text-center">
                             <p style="margin-top: 8px;margin-bottom: 6px;font-size:16px;" class="myfont myfontColor user-settings">xi1zi</p>
-                            <p class="myfont myfontColor myTextOverflow user-settings" style="margin-bottom: 5px;">周广恩的私人导航</p>
+                            <p class="myfont myfontColor myTextOverflow user-settings" style="margin-bottom: 5px;">名白 - 导航</p>
                         </div>
                         <div class="row">
                             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">

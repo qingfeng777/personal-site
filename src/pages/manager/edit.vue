@@ -12,7 +12,7 @@
           </header>
           <article class="article-content">
             <div id="main">
-              <mavon-editor id="editor" :subfield=false  v-model="article.content" />
+              <mavon-editor :subfield=false   v-model="article.content" />
             </div>
           </article>
 

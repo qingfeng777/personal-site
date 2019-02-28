@@ -16,11 +16,11 @@
             　　MyBlog
             </router-link>
           </li>
-          <li>
+          <!--<li>
             <router-link to="/manager">
             　　manage
             </router-link>
-          </li>
+          </li>-->
         </ul>
 
         <router-view />
